@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Hotel SeaCoast</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.PNG" />
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/indian_food.css">
+
+     <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&display=swap" rel="stylesheet"> 
+     <!-- Font Awesome Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--For Responsive Page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script defer src="../Mit/js/search_popup.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img class="logo-img" src="./images/hotel-logo2.png" alt="no image">
+            <a href="#default" class="logo">SeaCoast</a>
+            <div class="header-text">
+                <ul class="nav-list">
+                    <li class="nav-iteams">
+                        <a href="../jay/home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="../riddhi/index.html" class="nav-link">Rooms</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="../Neeti/Details.html" class="nav-link">Details</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="index.html" class="nav-link">Food</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="../jay/contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- search box to find item -->
+        <div class="searchBar">
+            <input id="searchItem" onkeyup="search_item()" type="text" name="search" placeholder="Search Item By Name">
+        </div>
+
+         <!-- Grid Style 1 Start -->
+         <div class="grid-title">
+            <h2>North Indian Dishes</h2>
+        </div>
+        <div class="grid-1-description">
+            <ul>
+                <li>Venture to the north, and you will find that roast meat dishes, cooked in the tandoor oven to be a common item consumed in daily meals. North Indians also consume rice dishes, such as the biryani, and flatbreads, like the chapati and poori. The flatbreads are usually eaten with thick, mild curries.</li>
+            </ul>
+        </div>
+        <div class="product-grid grid-1">
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/dum-aloo.jpg" alt="Image1Indian"/>
+                        <div class="product-status">
+                            <span>Regular</span>
+                            <span>Availabile</span>
+                        </div>
+                        <div class="product-action">
+                            <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                            <!-- <a href="#"><i class='fas fa-concierge-bell'></i></a>
+                            <a href="#"><i class="fas fa-bookmark"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <button data-modal-target="#modal" class="btn-for-item">Dum Aloo</button>    <!--This will call the JS and create target-->
+                            <div class="modal" id="modal">                                     <!-- Create Model and pass to JS-->
+                                <div class="modal-header">
+                                  <div class="title"><h2>Dum Aloo</h2></div>                   <!-- Create Header of item-->
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">                                       <!-- Create Body of item-->
+                                    <ul>
+                                        <li>Dum Aloo is a potato curry which is made using baby potatoes.”Dum” refers to dum cooking in Indian cuisine where dishes are cooked on low heat by sealing the pot. For example this vegetable biryani uses the same method. Dum cooking enhances the flavor of the dish.</li>
+                                        <li>It made up with baby potatoes, yogurt, spices, cashews & cream, cilantro & kasuri methi. We are making this dish with mustard oil, freshly ground spices and finish with cream and sugar. We serve it with either of jeera rice and naan or with any bread of choice.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$30</h2>
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/dal-makhani.jpg" alt="Product Image"/>
+                        <div class="product-status">
+                            <span>New</span>
+                            <span>Availabile</span>
+                        </div>
+                        <div class="product-action">
+                            <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <button data-modal-target="#modal1" class="btn-for-item">Dal Makhani</button>
+                            <div class="modal" id="modal1">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Dal Makhani</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>This Dal Makhani recipe is a restaurant style version with subtle smoky flavors and creaminess of the lentils. If you love authentic Punjabi food then you are going to love this Dal Makhani even more.</li>
+                                        <li>Dal Makhani is one of the most popular lentil recipes from the North Indian Punjabi cuisine made with Whole Black Lentils (known as Urad dal or Kaali Dal in Hindi) and Kidney Beans (known as Rajma in Hindi).</li>
+                                    </ul>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$70</h2>
+                            <h2>$100</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/palak-paneer.jpg" alt="Product Image"/>
+                        <div class="product-status">
+                            <span>Special</span>
+                            <span>Availabile</span>
+                        </div>
+                        <div class="product-action">
+                           <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <button data-modal-target="#modal2" class="btn-for-item">Palak Paneer</button>
+                            <div class="modal" id="modal2">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Palak Paneer</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Palak Paneer is a popular Indian dish of Indian cottage cheese cubes in a mild, spiced smooth spinach sauce. This delicious creamy dish is made with fresh spinach leaves, paneer (firm cottage cheese), onions, tomatoes, herbs and spices.</li>
+                                        <li>Paneer contains high quality protein and calcium which aids in weight loss. Since paneer is low in carbs and high in protein it gets digested slowly and hence good for diabetes.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$50</h2>
+                            <h2></h2>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/biryani.jpg" alt="Product Image"/>
+                        <div class="product-status">
+                            <span>Regular</span>
+                            <span>Unavailable</span>
+                        </div>
+                        <div class="product-action">
+                           <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <button data-modal-target="#modal3" class="btn-for-item">Biryani</button>
+                            <div class="modal" id="modal3">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Biryani</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Biryani is a rice dish made with layers of rice, spices and traditionally meat (but it our case veggies!). Nothing like a good plate of aromatic biryani! This Vegetable Biryani hits all the right spots with its wonderful aroma and exotic flavors!</li>
+                                        <li>Loaded with veggies, crunchy cashews, warm spices like saffron, herbs like cilantro and mint, this biryani is a delight to the taste buds in every bite!</li>
+                                    </ul>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$20</h2>
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Grid Style 1 End -->
+
+        <!-- Grid Style 2 Start -->
+        <div class="grid-title">
+            <h2>Gujarati Dishes</h2>
+        </div>
+        <div class="grid-1-description">
+            <ul>
+                <li>Gujarati cuisine is one of the the oldest culinary treasures of India and is primarily vegetarian. Gujarati dises are sweet as native Gujarati people. We have dises which are very popular in various parts of Gujarat which gives you unique touch to Gujarati cuisine. </li>
+            </ul>
+        </div>
+        <div class="product-grid grid-1">
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/khandvi-1.jpg" alt="Product Image"/>
+                        <div class="product-status">
+                            <span>New</span>
+                            <span>Availabile</span>
+                        </div>
+                        <div class="product-action">
+                            <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">    
+                            <button data-modal-target="#modal4" class="btn-for-item">Khandvi</button>
+                            <div class="modal" id="modal4">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Khandvi</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Khandvi, also known as Patuli, Dahivadi or Suralichi Vadi, is a savory snack in Maharashtrian cuisine as well as in Gujarati cuisine of India. It consists of yellowish, tightly rolled bite-sized pieces and is primarily made of gram flour and yogurt.</li>
+                                        <li>Here we made Khandvi with a mixture of gram flour and buttermilk. Cooking this smooth batter of the gram flour and buttermilk batter is one tricky part.</li>
+                                    </ul>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$70</h2>
+                            <h2>$100</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/kadi.jpg" alt="Product Image"/>
+                        <div class="product-status">
+                            <span>Regular</span>
+                            <span>Unavailable</span>
+                        </div>
+                        <div class="product-action">
+                           <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <button data-modal-target="#modal5" class="btn-for-item">Gujarati Kadhi</button>
+                            <div class="modal" id="modal5">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Gujarati Kadhi</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Kadhi is a traditional Gujarati preparation of a wonderful sweet and spicy curd mixture thickened with besan (gram flour), which can be enhanced in many ways using other ingredients like pakoras and koftas.</li>
+                                        <li>Enjoy the Gujarati kadhi with hot bowl of khichdi. Our collection of Gujarati Dal and Kadhi has many varieties of kadhi recipes like the Bhatia Kadhi, Gujarati Suva Kadhi and Radish Koftas in Kadhi which can be relished with Gujarati Khichdis.</li>
+                                    </ul>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$20</h2>
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/thepla.jpg" alt="Image1Indian"/>
+                        <div class="product-status">
+                            <span>Regular</span>
+                            <span>Availabile</span>
+                        </div>
+                        <div class="product-action">
+                            <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                            <!-- <a href="#"><i class='fas fa-concierge-bell'></i></a>
+                            <a href="#"><i class="fas fa-bookmark"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <button data-modal-target="#modal6" class="btn-for-item">Thepla</button>
+                            <div class="modal" id="modal6">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Thepla</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Thepla are light as well as healthy. A good snack for children who don’t like greens, especially fenugreek. This way you can incorporate some greens in their diet. along with fenugreek you can also add some other greens like spinach or amaranth in the dough.</li>
+                                        <li>Thepla burns the excess calories and helps you in staying energized. Good for skin, eyes, and hair –the nutrients and vitamins present in Thepla help to promote glowing and healthy skin.</li>
+                                    </ul>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$30</h2>
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/undhiyu.jpg" alt="Product Image"/>
+                        <div class="product-status">
+                            <span>Special</span>
+                            <span>Availabile</span>
+                        </div>
+                        <div class="product-action">
+                           <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <button data-modal-target="#modal7" class="btn-for-item">Undhiyu</button>
+                            <div class="modal" id="modal7">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Undhiyu</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Undhiyu is a one pot vegetable casserole dish that is the hallmark of Gujarati vegetarian cuisine. Generally preparing undhiyu takes a lot of time and needs patience. Traditionally the veggies are cooked or fried in batches.</li>
+                                        <li>This delicious recipe of surti undhiyu does not take much time, as all the veggies along with the Methi muthia are steamed in a pressure cooker. Though, if you want you can also cook the veggies in a large pot or pan. Thus the recipe is easy as well as healthy.</li>
+                                    </ul>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$50</h2>
+                            <h2></h2>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        <!-- Grid Style 2 End -->
+
+        <!-- Grid Style 3 Start -->
+        <div class="grid-title">
+            <h2>South Indian Dishes</h2>
+        </div>
+        <div class="grid-1-description">
+            <ul>
+                <li>The South Indian food is a brilliant blend of flavors, colors, seasoning, nutritional balance, fragrance, taste, and visual appeal. We have  dosas, idlis, vadas and uttapams. Some of them are currently Unavailable and also we are introducing some special dises.</li>
+            </ul>
+        </div>
+        <div class="product-grid grid-1">
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/dosa.jpg" alt="Product Image"/>
+                        <div class="product-status">
+                            <span>Special</span>
+                            <span>Availabile</span>
+                        </div>
+                        <div class="product-action">
+                           <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <button data-modal-target="#modal8" class="btn-for-item">Masala Dosa</button>
+                            <div class="modal" id="modal8">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Masala Dosa</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Masala dosa is crispy rice & lentil crepes that are stuffed with a spiced and savory potato filling. Masala dosa is crispy rice & lentil crepes that are stuffed with a spiced and savory potato filling.</li>
+                                        <li>It is made by soaking and grinding lentils and rice batter. This ground batter is then fermented overnight to give the dosa its characteristic soft and crispy texture.</li>
+                                    </ul>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$40</h2>
+                            <h2></h2>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/biryani.jpg" alt="Product Image"/>
+                        <div class="product-status">
+                            <span>New</span>
+                            <span>Availabile</span>
+                        </div>
+                        <div class="product-action">
+                            <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <button data-modal-target="#modal9" class="btn-for-item">Rasam Rice</button>
+                            <div class="modal" id="modal9">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Rasam Rice</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Rasam rice is a nutritious south indian one pot meal recipe which is made from combining rice and rasam together. It is also known as rasam sadham in south indian homes.</li>
+                                        <li>This is very amazing in taste and it contains a lot of health benefiting nutrients. Rasam rice is a perfect remedy for cold and cough.</li>
+                                    </ul>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$30</h2>
+                            <h2>$50</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/s4.jpg" alt="Product Image"/>
+                        <div class="product-status">
+                            <span>Regular</span>
+                            <span>Unavailable</span>
+                        </div>
+                        <div class="product-action">
+                           <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <button data-modal-target="#modal10" class="btn-for-item">Medu Vada</button>
+                            <div class="modal" id="modal10">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Medu Vada</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Most South Indians consider breakfast incomplete without Medu Vada. Whether they have Idli, dosa, pongal or upma, they like to add a crispy, tasty and protein-rich urad dal vada to the platter.</li>
+                                        <li>In fact, when you have breakfast in a South Indian restaurant, even in the remote villages, you will be fascinated to see the waiter reel out the list of breakfast combos, almost all of them featuring vada! We serving them fresh with Sambhar and coconut chutney however is doubly delightful.</li>
+                                    </ul>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$25</h2>
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-single">
+                    <div class="product-img">
+                        <img src="images/sambhar.jpg" alt="Image1Indian"/>
+                        <div class="product-status">
+                            <span>Regular</span>
+                            <span>Availabile</span>
+                        </div>
+                        <div class="product-action">
+                            <a href="chef.html"><i class="fa fa-eye"></i></a>
+                            <a href="chef.html"><i class='fas fa-utensils'></i></a>
+                            <a href="chef.html"><i class="far fa-bookmark"></i></a>
+                            <!-- <a href="#"><i class='fas fa-concierge-bell'></i></a>
+                            <a href="#"><i class="fas fa-bookmark"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-title">
+                            <button data-modal-target="#modal11" class="btn-for-item">Buttermilk Sambar</button>
+                            <div class="modal" id="modal11">
+                                <div class="modal-header">
+                                  <div class="title"><h2>Buttermilk Sambar</h2></div>
+                                  <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Buttermilk sambar or Yogurt sambar is the traditional sambar gets a makeover where lentils and buttermilk combine. This is a sambar variety made with yogurt and ground coconut masala paste. Unlike the regular sambar variety, it does not use tamarind for sourness. </li>
+                                        <li>Buttermilk/yogurt is extensively used in the Indian cuisine. It is one of the ways in which we hydrate ourselves during summer. </li>
+                                    </ul>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product-ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="product-price">
+                            <h2>$45</h2>
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Grid Style 3 End -->
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content-brand">
+                    <a href="#" class="footer-logo">
+                        <img class="logo-footer-image" src="images/home_logo.JPG" alt="footer-image">
+                    </a>
+                </div>
+
+                <div class="social-media-wrap">
+                    &copy;2020 The SeaCoast Hotels Company Limited. All Rights Reserved.
+                    <P><b>Follow us</b></p>
+                    <div class="social-med">
+                        <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

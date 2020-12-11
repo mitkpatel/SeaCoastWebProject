@@ -1,0 +1,524 @@
+/*header and footer*/
+/*Import the fonts used*/
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Custom properties*/
+  :root {
+      --dark-color: #2d2c2c;
+      --footer-color: #333333;
+      --header-color: #333333;
+      --header-color-alt: rgba(53, 10, 79, .5);
+      --heading-color: #e1591e;
+      --purple-light: #333333;
+      --yellow-solid: #fa9e2c;
+      --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
+      --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+  }
+
+  html{
+      font-size: 10px;
+  }
+
+  body{
+      font-family: 'Open Sans', sans-serif ;
+      font-size: 1.6rem;
+      color: var(--dark-color);
+  }
+
+  a{
+      text-decoration: none;
+      color: inherit;
+  }
+  ul{
+      list-style: none;
+  }
+
+  nav ul li a:hover {
+      font-size: 3rem;
+      color: red;
+  }
+  section{
+      padding: 5rem 0;
+  }
+
+/*Reusable styles*/
+  .container{
+      width: 100%;
+      max-width: 120rem;
+      padding: 0 1.5rem;
+      margin: 0 auto;
+  }
+
+/*header style*/
+  * {box-sizing: border-box;}
+  a{
+      text-decoration: none;
+      color: inherit;
+  }
+  ul{
+      list-style: none;
+  }
+
+  .header {
+    overflow: hidden;
+    background-color: var(--header-color);
+  }
+
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 5rem;
+  }
+
+  .header-text{
+      display: block;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .header-text ul li a{
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      margin-top: 20px;
+  }
+
+  .logo-img{
+      width: 90px;
+      height: 80px;
+      float: left;
+      margin-top: 15px;
+      margin-left: 20px;
+  }
+
+  .logo-img :hover{
+      width: 110px;
+      height: 100px;
+  }
+
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+  }
+
+  .header a:hover {
+    color: red;
+  }
+
+  .header a.active {
+    color: red;
+  }
+
+  .header-right {
+    float: right;
+  }
+
+/*finish header*/
+
+/* Footer property start */
+
+  .footer{
+      padding-bottom: 2rem;
+      width: 100%;
+      height: fit-content;
+      background-color: var(--footer-color);
+      color: #fff;
+      font-size: 20px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .footer-content-brand{
+      margin-bottom: 3rem;
+    }
+    
+    .social-media-wrap{
+      text-align: center;
+      
+    }
+    
+    .footer-logo{
+      float: left;
+    }
+    
+    .footer-logo-image{
+      height: 8rem;
+      width: 20rem;
+    }
+    
+    .social-med a{
+      font-size: 25px;
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+    
+    .social-med a:hover {
+      font-size: 35px;
+    }
+    
+  /* Footer property stop */
+
+  /* responsive Buttons of cuisine for mobile view image size */
+  @media screen and (max-width: 600px) {
+      .details1-image, .details2-image, .details3-image {
+        width: 80%;
+      }
+    }
+    
+    @media screen and (max-width: 750px) { 
+      html, body {
+        overflow-x: hidden;
+      }
+      body {
+        width:100%;
+      }
+
+     /* header start */
+  
+      .header a {
+        float: none;
+        padding: 0;
+        margin-bottom: 10px;
+      }
+    
+      .header-text ul li a{
+        color: white;
+        display: flex;
+        font-size: 15px;
+      }
+    
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        display: flex;
+        padding-top: 40px;
+        padding-right: 20px;
+        text-align: right;
+        justify-content: flex-end;
+      }
+    
+      .header a:hover {
+        color: red;
+      }
+    
+      .header a.active {
+        color: red;
+      }
+    
+      .header-text{
+        clear: left;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+    
+      .header-text ul li a{
+        color: white;
+        font-weight: bold;
+        display: block;
+        align-items: center;
+        font-size: 20px;
+      }
+    
+      .nav-list {
+        margin-top: -20px;
+      }
+  
+    /*header stop */
+  
+    /* footer start */
+  
+      .footer{
+        font-size: 15px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+    
+      .footer-content-brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .footer-logo {
+        clear: left;
+        display: flex;
+        justify-content: center;
+      }
+    
+      .logo-footer-image{
+        margin-top: 20px;
+        width: 50%;
+      }
+    
+      .social-med a{
+        font-size: 25px;
+      }
+    
+      .social-med a:hover {
+        font-size: 30px;
+      }
+    
+  }
+  /* responsive header and footer end */
+  
+/*end*/
+  .section {
+    position: relative;
+    height: 100vh;
+  }
+
+  .section .section-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+/*booking form*/
+  #booking {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../imgs/background\ copy.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #booking::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(47, 103, 177, 0.6);
+  }
+
+  .booking-form {
+    background-color: white;
+    padding: 50px 5px;
+    -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    width: 800px;
+  }
+
+  .booking-form .form-group {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .booking-form .form-control {
+    background-color: #ebecee;
+    border-radius: 4px;
+    border: none;
+    height: 30px;
+    width: 160px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #3e485c;
+    font-size: 14px;
+    
+  }
+
+  .booking-form .form-control::-webkit-input-placeholder {
+    color: rgba(62, 72, 92, 0.3);
+  }
+
+  .booking-form .form-control:-ms-input-placeholder {
+    color: rgba(62, 72, 92, 0.3);
+  }
+
+  .booking-form .form-control::placeholder {
+    color: rgba(62, 72, 92, 0.3);
+  }
+
+  .booking-form input[type="date"].form-control:invalid {
+    color: rgba(62, 72, 92, 0.3);
+  }
+
+  .booking-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .booking-form select.form-control+.select-arrow {
+    position: absolute;
+    right: 0px;
+    bottom: 4px;
+    width: 32px;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+    pointer-events: none;
+    color: rgba(62, 72, 92, 0.3);
+    font-size: 14px;
+  }
+
+  .booking-form select.form-control+.select-arrow:after {
+    content: '\279C';
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .booking-form .form-label {
+    display: inline-block;
+    color: #3e485c;
+    height: 20px;
+  width: 300px;
+  margin-top: 10px;
+  
+  }
+
+  .booking-form .submit-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #e1591e;
+    font-weight: 700;
+    padding: 14px 30px;
+    border-radius: 4px;
+    border: none;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+
+  .booking-form .submit-btn:hover,
+  .booking-form .submit-btn:focus {
+    opacity: 0.9;
+  }
+
+  .booking-cta {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  .booking-cta h1 {
+    font-size: 52px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .booking-cta p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+.form-btn{
+  font-size: x-small;
+}
+
+  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #333333;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.column {
+  height: 400px;
+  float: left;
+  width: 20%;
+  
+  margin-left: 160px;
+}
+
+.row{
+  width: 100%;
+  height: auto;
+}
+.flip-image{
+  max-width:100%;
+  height:auto;
+  margin: 0 auto;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.info {
+  margin: 150px;
+  width: 30%;
+  border: 3px solid #333333;
+  padding: 10px;
+  float: left;
+}
+
+.main-heading1{
+  font-size: 30px;
+  font-family: 'courgette',cursive;
+}
+
+
+
+
+
+
+

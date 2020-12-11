@@ -1,0 +1,482 @@
+/*Import the fonts used*/
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Custom properties*/
+:root {
+    --dark-color: #2d2c2c;
+    --footer-color: #333333;
+    --header-color: #333333;
+    --header-color-alt: rgba(53, 10, 79, .5);
+    --green-light: #649179;
+    --purple-light: #333333;
+    --yellow-solid: #fa9e2c;
+    --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
+    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+    background-color:var(--green-light);
+}
+
+section{
+    padding: 5rem 0;
+}
+
+/*Reusable styles*/
+.container{
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+/*hed*/
+* {box-sizing: border-box;}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: var(--header-color);
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 5rem;
+}
+
+
+.header-text{
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-text ul li a{
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.logo-img{
+    width: 90px;
+    height: 80px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.logo-img :hover{
+    width: 110px;
+    height: 100px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+}
+
+.header a:hover {
+  color: red;
+}
+
+.header a.active {
+  color: red;
+}
+
+.header-right {
+  float: right;
+}
+
+
+
+/*fin*/
+
+.hero{
+    width: 100%;
+    height: 90vh;
+    background: url(../images/hero_background.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color:#2d546480;
+    top: 100;
+    left: 0;
+    z-index: -1;
+}
+
+.main-heading{
+    color: white;
+    line-height: 1;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    margin-bottom: 2.5rem;
+    
+}
+
+.title{
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.subtitle{
+    font-size: 6.8rem;
+    font-weight: 300;
+    font-family: 'courgette',cursive;
+}
+
+.footer{
+    padding-bottom: 2rem;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--footer-color);
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content-brand{
+    margin-bottom: 3rem;
+}
+
+.social-media-wrap{
+    text-align: center;
+    
+}
+
+.footer-logo{
+    float: left;
+}
+
+.social-med a{
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.social-med a:hover {
+    font-size: 35px;
+}
+
+
+/* The flip box container  */
+.flip-box {
+    background-color: transparent;
+    width: 500px;
+    height: auto;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+   .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side  */
+  .flip-box-front {
+    position: absolute;
+    width: auto;
+    height: auto;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+
+  .flip-box-back {
+    position: absolute;
+    width: auto;
+    height: 350px;
+    font-size: 25px;
+    -webkit-backface-visibility: hidden;  
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  
+  .flip-box-back {
+    background-color: #333333;
+    color: white;
+    font-weight: 300;
+    transform: rotateY(180deg);
+  } 
+
+  .column {
+    height: 400px;
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+  }
+
+  .row{
+    width: 100%;
+    height: auto;
+  }
+  .flip-image{
+    max-width:100%;
+    height:auto;
+    margin: 0 auto;
+  }
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .info {
+    margin: 15rem;
+    width: 30%;
+    border: 10px solid #333333;
+    padding: 10px;
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--header-color);
+    background-color: whitesmoke;
+  }
+
+  .main-heading1{
+    font-size: 50px;
+    font-family: 'courgette',cursive;
+    color:var(--green-light);
+  }
+
+  
+  .review a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+   
+  }
+
+
+  #btn {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .btn-group button {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background-color: var(--dark-color); 
+    color: white; 
+    padding: 10px 24px; 
+    cursor: pointer; 
+    font-size: large;
+  }
+  
+  .review a:hover, a:active {
+    background-color: red;
+  }
+
+  /*Header responsive */
+  * {box-sizing: border-box;}
+
+  @media screen and (max-width: 760px) {
+
+    html, body {
+      overflow-x: hidden;
+    }
+   body {
+      width:100%;
+    }
+    
+    .flip-box {
+      background-color: transparent;
+      width: 300%;
+      height: auto;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px; 
+    }
+
+    .flip-box-back {
+      position: absolute;
+      width: auto;
+      height: auto;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    .column{
+      margin:11%;
+    }
+    .flip-image{
+      margin: auto;
+      width: 100%;    
+    }
+
+    /* header */
+
+    .header a {
+      float: none;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+
+    .header-text ul li a{
+      color: white;
+      display: flex;
+      font-size: 15px;
+  }
+ 
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    padding-top: 40px;
+    padding-right: 20px;
+    text-align: right;
+    justify-content: flex-end;
+  }
+  
+  .header a:hover {
+    color: red;
+  }
+  
+  .header a.active {
+    color: red;
+  }
+  
+  .header-text{
+    clear: left;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .header-text ul li a{
+    color: white;
+    font-weight: bold;
+    display: block;
+    align-items: center;
+    font-size: 20px;
+ }
+
+ .nav-list {
+    margin-top: -20px;
+ }
+
+  /*header stop */
+
+  /* footer start */
+  
+  .footer{
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content-brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  clear: left;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-footer-image{
+  margin-top: 20px;
+  width: 50%;
+}
+
+.social-med a{
+    font-size: 25px;
+}
+
+.social-med a:hover {
+    font-size: 30px;
+}
+
+.info {
+  
+  width: 60%;
+  border: 3px solid #333333;
+  margin: 100px;
+  padding: 10px;
+
+}
+
+  /* footer end */
+}
+
+
+.fade {
+  margin: 50px;
+  padding: 50px;
+  background-color: lightgreen;
+  opacity: 1;
+}

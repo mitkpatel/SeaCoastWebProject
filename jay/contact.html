@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hotel SeaCoast</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../images/favicon.PNG" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./stylesheet/styles_contact.css">
+    <script defer src="js/validation.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <img class="logo-img" src="./images/hotel-logo2.png" alt="no image">
+            <a href="#default" class="logo">SeaCoast</a>
+            <div class="header-text">
+                <ul class="nav-list">
+                    <li class="nav-iteams">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="../riddhi/index.html" class="nav-link">Rooms</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="../Neeti/Details.html" class="nav-link">Details</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="../Mit/index.html" class="nav-link">Food</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="row">
+            <h1 class="row-heading">GET IN TOUCH</h1>
+            <div class="column">
+                <i class="fa fa-map-marker-alt fa-5x"></i>
+                <h2>Address</h2><br>
+                <p>
+                    X123,Icon Street,<br>
+                    Star Avenue Road,<br>
+                    NR SeaCoast lane,<br>
+                    CA-123 456
+                </p>
+            </div>
+            <div class="column">
+                <i class="fa fa-phone fa-5x"></i>
+                <h2>Phone</h2><br>
+                <p>
+                    Location 1<br>
+                    101.101.1010 phone<br>
+                    Location 2<br>
+                    202.202.2020 phone
+                </p>
+            </div>
+            <div class="column">
+                <i class="fa fa-envelope fa-5x"></i>
+                <h2>Email</h2><br>
+                <p>
+                    office 1<br>
+                    Seacoasthotels1@abc.com<br>
+
+                    office 2<br>
+                    Seacoasthotels@abc.com<br>
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="column2">
+            <div class="message">
+                <h1>Message Us</h1>
+                If you wish to book your holidays at SeaCoast,
+                please complete SeaCoast’s Contact application
+                and our team will contact you
+                after their review of your submitted information.
+            </div>
+
+            <div class="message">
+                <h1>Locate Us</h1>
+                If you wish to find location of SeaCoast,
+                please click ont SeaCoast’s Map application
+                and our team will contact you
+                after their review of your submitted information.
+            </div>
+        </div>
+        <div class="column2">
+            <form name="myform" action="/action_page.php" method="get" id="myform" class="myform">
+
+                <h1>Contact US</h1>
+
+                <div id="Account">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" class="form-control" id="contact-name" name="name"
+                            placeholder="Enter your name.." onkeyup='validateName()' required>
+                        <span class='error-message' id='name-error'></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="contact-phone" name="phone"
+                            placeholder="Ex: 1231231234" onkeyup='validatePhone()' required>
+                        <span class='error-message' id='phone-error'></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email address</label>
+                        <input type="email" class="form-control" id="contact-email" name="email"
+                            placeholder="Enter Email" onkeyup='validateEmail()' required>
+                        <span class='error-message' id='email-error'></span>
+                    </div>
+                </div><br>
+
+
+                Contact Via:<br>
+                <select name="Contact">
+                    <option value="email">email</option>
+                    <option value="phone">phone</option>
+
+                </select><br><br>
+
+                Comments:<br>
+                <textarea name="comments" placeholder="If you have any comments, please enter them here.">
+                            </textarea><br>
+                <br>
+
+                <button onclick='validateForm()' class="btn btn-default">Submit</button>
+                <span class='error-message' id='submit-error'></span>
+            </form>
+        </div>
+
+        <div class="row3">
+            <iframe class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3708.9796382910886!2d87.52744041489379!3d21.62571708567797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276d2ec65c3cb%3A0xa7b5c8239feebdb1!2sHotel%20Sea%20Coast!5e0!3m2!1sen!2sin!4v1605012253111!5m2!1sen!2sin">
+            </iframe>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content-brand">
+                    <a href="home.html" class="footer-logo">
+                        <img class="logo-footer-image" src="images/home_logo.JPG" alt="footer">
+                    </a>
+                </div>
+
+                <div class="social-media-wrap">
+                    &copy;2020 The SeaCoast Hotels Company Limited. All Rights Reserved.
+                    <P><b>Follow us</b></p>
+                    <div class="social-med">
+                        <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

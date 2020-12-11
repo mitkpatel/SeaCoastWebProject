@@ -1,0 +1,127 @@
+<!--button-->
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Read More</button>
+    <div id="myDropdown" class="dropdown-content">
+      <h1> ROOM DETAILS</h1>
+      <p>These cozy rooms located in the historic Palace Wing are the gateway to a memorable experience. Perfect for
+        meditation, these windowless rooms offer you complete tranquillity. Designed for our jet-setting business
+        travellers who require silence.</p>
+      <h2>OTHER CONVENIENCES</h2>
+      <ul>
+        <li>24-hour in-room dining</li>
+        <li>Premium Wi-Fi at nominal charge</li>
+        <li>Complimentary newspapers
+          Daily housekeeping & turndown service
+          Tea-coffee maker
+          Complimentary WiFi
+          Dual-line telephones with voicemail & data capabilities
+          Choice of smoking & non-smoking rooms(subject to availability)
+          40-inch flat-screen TV with satellite programmes
+          24-hour personalised butler service Complimentary 24-hour tea-coffee at Palace
+          Bottles of mineral water.</li>
+        <ul>
+
+          <h3>SIZE</h3>
+          33 Sq Mt
+          <h3>SIGNATURE FEATURE</h3>
+          Spacious rooms and bathrooms.
+          <h3>Occupancy Details</h3>
+          Up to 3 guests. Max Adults: 3, Max Children: 2
+    </div>
+
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+<!--over-->
+
+<style>
+    /* CSS for dropdown slider */
+.dropbtn {
+  background-color: #6d7479;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>

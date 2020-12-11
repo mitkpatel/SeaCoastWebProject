@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--- <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Noto+Serif" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Hotel SeaCoast</title>
+    <link rel="shortcut icon" href="../images/favicon.PNG" />
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!----<link rel="stylesheet" href="styles/main.css">-->
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img class="logo-img" src="./imgs/images/hotel-logo2.png" alt="no image">
+            <a href="#default" class="logo">SeaCoast</a>
+            <div class="header-text">
+                <ul class="nav-list">
+                    <li class="nav-iteams">
+                        <a href="../jay/home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="index.html" class="nav-link">Rooms</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="../Neeti/Details.html" class="nav-link">Details</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="../Mit/index.html" class="nav-link">Food</a>
+                    </li>
+                    <li class="nav-iteams">
+                        <a href="../jay/contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div class="about lobster-font-family">
+            <div class="container">
+                <h2 class="text-center text-capitalize">About our hotel</h2>
+                <img src="imgs/shape.png" alt="shapes">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h4>A best place to enjoy your life</h4>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                            Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+                            Latin
+                            words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
+                            classical literature, discovered </p>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="img"></div>
+                    </div>
+                </div>
+                <h2 class="text-capitalize" id="room">Rooms & Suits</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="img"></div>
+                        <div class="img"></div>
+
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="block">
+                            <div>
+                                <img src="imgs/shape.png" alt="image">
+                                <strong>$405</strong>
+                                <h5>luxury rooms</h5>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of
+                                    a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                    more-or-less normal distribution of letters,</p>
+
+
+                                <div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn">Read More</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <h1> ROOM DETAILS</h1>
+                                        <p>These rooms are located in the Palace Wing on the 2nd, 3rd and 4th floors.
+                                            They exude an aura of the old-world charm and elegance. These rooms are
+                                            adorned with delicate Rajput bay-windows, offering spectacular views of the
+                                            poolside or the bustling Mumbai city. Includes butler service and
+                                            complimentary WiFi for four devices.</p>
+                                        <h2>OTHER CONVENIENCES</h2>
+                                        <ul>
+                                            <li>24-hour in-room dining</li>
+                                            <li>Premium Wi-Fi at nominal charge</li>
+                                            <li>Complimentary newspapers
+                                                Daily housekeeping & turndown service
+                                                Tea-coffee maker
+                                                Complimentary WiFi
+                                                Dual-line telephones with voicemail & data capabilities
+                                                Choice of smoking & non-smoking rooms(subject to availability)
+                                                40-inch flat-screen TV with satellite programmes
+                                                24-hour personalised butler service Complimentary 24-hour tea-coffee at
+                                                Palace
+                                                Bottles of mineral water.</li>
+                                        </ul>
+
+                                        <h3>SIZE</h3>
+                                        33 Sq Mt
+                                        <h3>SIGNATURE FEATURE</h3>
+                                        Spacious rooms and bathrooms.
+                                        <h3>Occupancy Details</h3>
+                                        Up to 3 guests. Max Adults: 3, Max Children: 2 <br>
+                                        <button class="button-size"
+                                            onclick="window.location.href='typesofroom.html'">View More Rooms</button>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <script>
+                                        /* When the user clicks on the button, 
+                                        toggle between hiding and showing the dropdown content */
+                                        function myFunction() {
+                                            document.getElementById("myDropdown").classList.toggle("show");
+                                        }
+
+                                        // Close the dropdown if the user clicks outside of it
+                                        window.onclick = function (event) {
+                                            if (!event.target.matches('.dropbtn')) {
+                                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                                var i;
+                                                for (i = 0; i < dropdowns.length; i++) {
+                                                    var openDropdown = dropdowns[i];
+                                                    if (openDropdown.classList.contains('show')) {
+                                                        openDropdown.classList.remove('show');
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    </script>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery lobster-font-family" id="blog">
+                <div class="container">
+                    <h2 class="text-calitalize text-center">Our Rooms</h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="pic-one">
+                                <h4>King Room</h4>
+                            </div>
+                            <div class="pic-two">
+                                <h4>Queen Room</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="pic-three active">
+                                <h4>Superior Double Room</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="pic-four">
+                                <h4>Pool View</h4>
+                            </div>
+                            <div class="pic-five">
+                                <h4>Breakfast</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content-brand">
+                    <a href="home.html" class="footer-logo">
+                        <img class="logo-footer-image" src="imgs/images/home_logo.JPG" alt="footer">
+                    </a>
+                </div>
+
+                <div class="social-media-wrap">
+                    &copy;2020 The SeaCoast Hotels Company Limited. All Rights Reserved.
+                    <P><b>Follow us</b></p>
+                    <div class="social-med">
+                        <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

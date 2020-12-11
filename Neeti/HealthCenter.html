@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>health Center</title>
+        <meta charset="utf-8"/>
+        <meta name="keywords" content ="Health Center"/>
+        <link rel="shortrtcut icon"  href="/Neeti/images/gym-1.jpg"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Font awesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="/Neeti/css/health.css">
+    </head>
+
+    <body>
+        <header class="header">
+
+            <nav class="nav">
+
+                <img class="logo-img" src="/Neeti/images/hotel_home/images/hotel-logo2.png" alt="no image">
+
+                <a href="#default" class="logo">SeaCoast</a>
+
+                <div class="header-text">
+
+                    <ul class="nav-list">
+
+                        <li class="nav-iteams">
+
+                            <a href="../jay/home.html" class="nav-link">Home</a>
+
+                        </li>
+
+                        <li class="nav-iteams">
+
+                            <a href="../riddhi/index.html" class="nav-link">Rooms</a>
+
+                        </li>
+
+                        <li class="nav-iteams">
+
+                            <a href="Details.html" class="nav-link">Details</a>
+
+                        </li>
+
+                        <li class="nav-iteams">
+
+                            <a href="../Mit/index.html" class="nav-link">Food</a>
+
+                        </li>
+
+                        <li class="nav-iteams">
+
+                            <a href="../jay/contact.html" class="nav-link">Contact</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+    
+
+            </nav>
+
+        </header>
+
+        <main>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                <div class="numbertext">1/4</div>
+                  <img src="/Neeti/images/gym-4.jpg" style="width:100%; border-radius: 10%";>
+                </div>
+                
+                <div class="mySlides fade">
+                <div class="numbertext">2/4</div>
+                  <img src="/Neeti/images/gym-2.jpg" style="width:100%; border-radius: 10%">
+                </div>
+                
+                <div class="mySlides fade">
+                <div class="numbertext">3/4</div>
+                  <img src="/Neeti/images/gym-3.jpg" style="width:100%; border-radius: 10%">
+                </div>
+
+                <div class="mySlides fade">
+                 <div class="numbertext">4/4</div>
+                    <img src="/Neeti/images/gym-5.jpg" style="width:100%; border-radius: 10%">
+                  </div>s
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                <div style="text-align:center; margin-top: -40px;">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                  </div>
+                </div>
+                <br>
+                
+             
+                
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+
+            <div style="margin-top: 10%; font-family:cursive; clear: left; font-size: 16px; margin-top: 16px; margin-bottom: 20px;margin-left: 3%;">
+                <p>Look forward to breaking into a sweat. Rev up on a cardio machine. Cool down with a little yoga.
+                    De-stress in the steam and sauna. Stay in shape at the 24-hour gym in Hotel Seacost. 
+                    Open all day, well-equipped and perfectly suited to every health and fitness need. 
+                  <strong> It’s time for a change again, and this time, our call is to “Let’s make healthy happen“.</strong>
+                    Stay healthy. Stay active.
+                    <br/>
+                    <br/>
+                    <br/>
+                </p>
+
+
+               <div class="info"> 
+                <strong><u>Gym Amenities</u></strong><br/><br>
+                <button class="btn"><i class="fas fa-dumbbell"></i></button> Open 24-hours a day; 
+                instructor available from 6:30 A.M. to 9:00 P.M<br/>  <br/>         
+                <button class="btn"><i class="fas fa-running"></i></button> Personal Training <br/> <br/>               
+                 <button class="btn"><i class="fas fa-dumbbell"></i></button> Free weights<br/><br/>            
+                 <i class='fas fa-spa'></i></button> Equipped with life Fitness circuit training and cardio machines <br/><br/>
+                 <img src="/Neeti/images/yoga-icon.jpg">Yoga<br/><br/>
+
+                 <h3><u>Timings</u></h3>
+                 <ul>
+                      <li> Monday to Friday - 24 hrs (Trainer will be in from 7am-9pm)</li>
+                      <li> Saturday to Sunday - 24 hrs (Trainer will be in from 7am-9pm)</li>
+                      <li>Bank Holidays - 24 hrs (Trainer will be in from 7am-9pm)</li>
+                </ul>
+                     
+                </p>
+               </div>
+        </main>
+
+        <div id="btn">
+            <div class="btn-group">
+                <button onclick="window.location.href='Details.html'">Next</button>
+             </div>
+        </div>
+     
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-content-brand">
+                        <a href="#" class="footer-logo">
+                            <img class="logo-footer-image" src="/Neeti/images/hotel_home/images/home_logo.JPG" alt="footer-image">
+                        </a>
+                    </div>
+
+                    <div class="social-media-wrap">
+                        &copy;2020 The SeaCoast Hotels Company Limited. All Rights Reserved.
+                        <P><b>Follow us</b></p>
+                        <div class="social-med">
+                            <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="sm-link"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" class="sm-link"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
